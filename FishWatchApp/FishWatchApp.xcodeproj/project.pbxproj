@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380620A476C4259F55B49C74 /* Pods_FishWatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */; };
+		532085FD2546EB6B000EDF7E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532085FC2546EB6B000EDF7E /* LottieView.swift */; };
+		532086022546ED7E000EDF7E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532086012546ED7E000EDF7E /* LoadingView.swift */; };
+		5320860C2546F1BE000EDF7E /* boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 5320860B2546F1BE000EDF7E /* boat.json */; };
+		532086102546FE08000EDF7E /* SpeciesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320860F2546FE08000EDF7E /* SpeciesRow.swift */; };
+		5320861325470219000EDF7E /* noData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5320861225470219000EDF7E /* noData.json */; };
+		53389C042546D51A00EB4D66 /* FishWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53389C032546D51A00EB4D66 /* FishWatchAppApp.swift */; };
+		53389C062546D51A00EB4D66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53389C052546D51A00EB4D66 /* ContentView.swift */; };
+		53389C082546D51A00EB4D66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53389C072546D51A00EB4D66 /* Assets.xcassets */; };
+		53389C0B2546D51A00EB4D66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53389C0A2546D51A00EB4D66 /* Preview Assets.xcassets */; };
+		533DD9C025554DA900AA5F41 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533DD9BF25554DA900AA5F41 /* SearchBarView.swift */; };
+		534EE30225489E85008335A4 /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EE30125489E85008335A4 /* UIColor+Utils.swift */; };
+		534EE3082548A499008335A4 /* SpeciesTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EE3072548A499008335A4 /* SpeciesTitleView.swift */; };
+		534EE30C2548A55E008335A4 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EE30B2548A55E008335A4 /* Color+Utils.swift */; };
+		53528A972548CF3600B18EE4 /* SpeciesProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53528A962548CF3600B18EE4 /* SpeciesProfilView.swift */; };
+		53528AA02548DE2B00B18EE4 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 53528A9F2548DE2B00B18EE4 /* loading.json */; };
+		53528AA42548E11500B18EE4 /* SpeciesQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53528AA32548E11500B18EE4 /* SpeciesQuote.swift */; };
+		53528ABB2548E9A600B18EE4 /* SpeciesInformationsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53528ABA2548E9A600B18EE4 /* SpeciesInformationsRow.swift */; };
+		53652D282547407400ABB09B /* SpeciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53652D272547407400ABB09B /* SpeciesList.swift */; };
+		53652D2B2547418E00ABB09B /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53652D2A2547418E00ABB09B /* NoDataView.swift */; };
+		53652D2E2547434800ABB09B /* SpeciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53652D2D2547434800ABB09B /* SpeciesView.swift */; };
+		53652D312547447600ABB09B /* SpeciesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53652D302547447600ABB09B /* SpeciesManager.swift */; };
+		5370CD7325495E8500EC7530 /* SpeciesScienceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370CD7225495E8500EC7530 /* SpeciesScienceList.swift */; };
+		5370CD7C2549612600EC7530 /* SpeciesScienceInformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370CD7B2549612600EC7530 /* SpeciesScienceInformations.swift */; };
+		53B722CA2546D73200BA191C /* FishWatchSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B722C92546D73200BA191C /* FishWatchSpecies.swift */; };
+		53B85E4325496A03001CFB8B /* SpeciesScienceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */; };
+		53B85E4625497C39001CFB8B /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4525497C39001CFB8B /* String+Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02174E596395022CE4CFAF24 /* Pods-FishWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchApp.debug.xcconfig"; path = "Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532085FC2546EB6B000EDF7E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		532086012546ED7E000EDF7E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5320860B2546F1BE000EDF7E /* boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boat.json; sourceTree = "<group>"; };
+		5320860F2546FE08000EDF7E /* SpeciesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesRow.swift; sourceTree = "<group>"; };
+		5320861225470219000EDF7E /* noData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noData.json; sourceTree = "<group>"; };
+		53389C002546D51A00EB4D66 /* FishWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53389C032546D51A00EB4D66 /* FishWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppApp.swift; sourceTree = "<group>"; };
+		53389C052546D51A00EB4D66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53389C072546D51A00EB4D66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53389C0A2546D51A00EB4D66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53389C0C2546D51A00EB4D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533DD9BF25554DA900AA5F41 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		534EE30125489E85008335A4 /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		534EE3072548A499008335A4 /* SpeciesTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesTitleView.swift; sourceTree = "<group>"; };
+		534EE30B2548A55E008335A4 /* Color+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
+		53528A962548CF3600B18EE4 /* SpeciesProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesProfilView.swift; sourceTree = "<group>"; };
+		53528A9F2548DE2B00B18EE4 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		53528AA32548E11500B18EE4 /* SpeciesQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesQuote.swift; sourceTree = "<group>"; };
+		53528ABA2548E9A600B18EE4 /* SpeciesInformationsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesInformationsRow.swift; sourceTree = "<group>"; };
+		53652D272547407400ABB09B /* SpeciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesList.swift; sourceTree = "<group>"; };
+		53652D2A2547418E00ABB09B /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		53652D2D2547434800ABB09B /* SpeciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesView.swift; sourceTree = "<group>"; };
+		53652D302547447600ABB09B /* SpeciesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesManager.swift; sourceTree = "<group>"; };
+		5370CD7225495E8500EC7530 /* SpeciesScienceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesScienceList.swift; sourceTree = "<group>"; };
+		5370CD7B2549612600EC7530 /* SpeciesScienceInformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesScienceInformations.swift; sourceTree = "<group>"; };
+		53B722C92546D73200BA191C /* FishWatchSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchSpecies.swift; sourceTree = "<group>"; };
+		53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesScienceRow.swift; sourceTree = "<group>"; };
+		53B85E4525497C39001CFB8B /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		8608922A13B93D55CA3708BA /* Pods-FishWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchApp.release.xcconfig"; path = "Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53389BFD2546D51A00EB4D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380620A476C4259F55B49C74 /* Pods_FishWatchApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32C09932DE4F74EDDAA5EFF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		532085F82546EAB0000EDF7E /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				5320861225470219000EDF7E /* noData.json */,
+				5320860B2546F1BE000EDF7E /* boat.json */,
+				53528A9F2548DE2B00B18EE4 /* loading.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		532086002546ED6E000EDF7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				534EE3062548A48B008335A4 /* Species */,
+				532086012546ED7E000EDF7E /* LoadingView.swift */,
+				532085FC2546EB6B000EDF7E /* LottieView.swift */,
+				53652D2A2547418E00ABB09B /* NoDataView.swift */,
+				53389C052546D51A00EB4D66 /* ContentView.swift */,
+				533DD9BF25554DA900AA5F41 /* SearchBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53389BF72546D51A00EB4D66 = {
+			isa = PBXGroup;
+			children = (
+				53389C022546D51A00EB4D66 /* FishWatchApp */,
+				53389C012546D51A00EB4D66 /* Products */,
+				8B51294F4AEF204EAF967ECB /* Pods */,
+				32C09932DE4F74EDDAA5EFF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53389C012546D51A00EB4D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53389C002546D51A00EB4D66 /* FishWatchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53389C022546D51A00EB4D66 /* FishWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				53528AB82548E47E00B18EE4 /* Assets */,
+				534EE30025489E73008335A4 /* Extensions */,
+				532086002546ED6E000EDF7E /* Views */,
+				53B722C02546D59900BA191C /* Models */,
+				53389C032546D51A00EB4D66 /* FishWatchAppApp.swift */,
+				53389C072546D51A00EB4D66 /* Assets.xcassets */,
+				53389C0C2546D51A00EB4D66 /* Info.plist */,
+				53389C092546D51A00EB4D66 /* Preview Content */,
+			);
+			path = FishWatchApp;
+			sourceTree = "<group>";
+		};
+		53389C092546D51A00EB4D66 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				53389C0A2546D51A00EB4D66 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		534EE30025489E73008335A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				534EE30125489E85008335A4 /* UIColor+Utils.swift */,
+				534EE30B2548A55E008335A4 /* Color+Utils.swift */,
+				53B85E4525497C39001CFB8B /* String+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		534EE3062548A48B008335A4 /* Species */ = {
+			isa = PBXGroup;
+			children = (
+				53652D2D2547434800ABB09B /* SpeciesView.swift */,
+				53652D272547407400ABB09B /* SpeciesList.swift */,
+				5320860F2546FE08000EDF7E /* SpeciesRow.swift */,
+				534EE3072548A499008335A4 /* SpeciesTitleView.swift */,
+				53528A962548CF3600B18EE4 /* SpeciesProfilView.swift */,
+				53528AA32548E11500B18EE4 /* SpeciesQuote.swift */,
+				53528ABA2548E9A600B18EE4 /* SpeciesInformationsRow.swift */,
+				5370CD7225495E8500EC7530 /* SpeciesScienceList.swift */,
+				53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */,
+			);
+			path = Species;
+			sourceTree = "<group>";
+		};
+		53528AB82548E47E00B18EE4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				532085F82546EAB0000EDF7E /* Lottie */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		53B722C02546D59900BA191C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53B722C92546D73200BA191C /* FishWatchSpecies.swift */,
+				53652D302547447600ABB09B /* SpeciesManager.swift */,
+				5370CD7B2549612600EC7530 /* SpeciesScienceInformations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B51294F4AEF204EAF967ECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02174E596395022CE4CFAF24 /* Pods-FishWatchApp.debug.xcconfig */,
+				8608922A13B93D55CA3708BA /* Pods-FishWatchApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53389BFF2546D51A00EB4D66 /* FishWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53389C0F2546D51A00EB4D66 /* Build configuration list for PBXNativeTarget "FishWatchApp" */;
+			buildPhases = (
+				4D550BB8C15552EE8521ED82 /* [CP] Check Pods Manifest.lock */,
+				53389BFC2546D51A00EB4D66 /* Sources */,
+				53389BFD2546D51A00EB4D66 /* Frameworks */,
+				53389BFE2546D51A00EB4D66 /* Resources */,
+				55585A7C2CC28BD052794AAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishWatchApp;
+			productName = FishWatchApp;
+			productReference = 53389C002546D51A00EB4D66 /* FishWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53389BF82546D51A00EB4D66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					53389BFF2546D51A00EB4D66 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 53389BFB2546D51A00EB4D66 /* Build configuration list for PBXProject "FishWatchApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53389BF72546D51A00EB4D66;
+			productRefGroup = 53389C012546D51A00EB4D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53389BFF2546D51A00EB4D66 /* FishWatchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53389BFE2546D51A00EB4D66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5320861325470219000EDF7E /* noData.json in Resources */,
+				53528AA02548DE2B00B18EE4 /* loading.json in Resources */,
+				53389C0B2546D51A00EB4D66 /* Preview Assets.xcassets in Resources */,
+				5320860C2546F1BE000EDF7E /* boat.json in Resources */,
+				53389C082546D51A00EB4D66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D550BB8C15552EE8521ED82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FishWatchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55585A7C2CC28BD052794AAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53389BFC2546D51A00EB4D66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B85E4625497C39001CFB8B /* String+Utils.swift in Sources */,
+				53389C062546D51A00EB4D66 /* ContentView.swift in Sources */,
+				532086102546FE08000EDF7E /* SpeciesRow.swift in Sources */,
+				5370CD7C2549612600EC7530 /* SpeciesScienceInformations.swift in Sources */,
+				53389C042546D51A00EB4D66 /* FishWatchAppApp.swift in Sources */,
+				532085FD2546EB6B000EDF7E /* LottieView.swift in Sources */,
+				53528ABB2548E9A600B18EE4 /* SpeciesInformationsRow.swift in Sources */,
+				534EE30C2548A55E008335A4 /* Color+Utils.swift in Sources */,
+				53528AA42548E11500B18EE4 /* SpeciesQuote.swift in Sources */,
+				53652D312547447600ABB09B /* SpeciesManager.swift in Sources */,
+				533DD9C025554DA900AA5F41 /* SearchBarView.swift in Sources */,
+				53652D282547407400ABB09B /* SpeciesList.swift in Sources */,
+				53B85E4325496A03001CFB8B /* SpeciesScienceRow.swift in Sources */,
+				5370CD7325495E8500EC7530 /* SpeciesScienceList.swift in Sources */,
+				534EE3082548A499008335A4 /* SpeciesTitleView.swift in Sources */,
+				53652D2E2547434800ABB09B /* SpeciesView.swift in Sources */,
+				53B722CA2546D73200BA191C /* FishWatchSpecies.swift in Sources */,
+				534EE30225489E85008335A4 /* UIColor+Utils.swift in Sources */,
+				53528A972548CF3600B18EE4 /* SpeciesProfilView.swift in Sources */,
+				53652D2B2547418E00ABB09B /* NoDataView.swift in Sources */,
+				532086022546ED7E000EDF7E /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		53389C0D2546D51A00EB4D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53389C0E2546D51A00EB4D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53389C102546D51A00EB4D66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02174E596395022CE4CFAF24 /* Pods-FishWatchApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FishWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = T7ULJL4398;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FishWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lambert.thibaud.FishWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53389C112546D51A00EB4D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8608922A13B93D55CA3708BA /* Pods-FishWatchApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FishWatchApp/Preview Content\"";
+				DEVELOPMENT_TEAM = T7ULJL4398;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FishWatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lambert.thibaud.FishWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53389BFB2546D51A00EB4D66 /* Build configuration list for PBXProject "FishWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53389C0D2546D51A00EB4D66 /* Debug */,
+				53389C0E2546D51A00EB4D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53389C0F2546D51A00EB4D66 /* Build configuration list for PBXNativeTarget "FishWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53389C102546D51A00EB4D66 /* Debug */,
+				53389C112546D51A00EB4D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53389BF82546D51A00EB4D66 /* Project object */;
+}
