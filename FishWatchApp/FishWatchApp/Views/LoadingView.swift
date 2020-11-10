@@ -9,7 +9,11 @@ import SwiftUI
 
 struct LoadingView: View {
 
-    var loadingText: String?
+    private var loadingText: String
+
+    init(loadingText: String = "Loading...") {
+        self.loadingText = loadingText
+    }
 
     var body: some View {
         VStack(alignment: .center, spacing: 0, content: {
@@ -21,7 +25,7 @@ struct LoadingView: View {
             }
                 .padding()
 
-            Text(loadingText ?? "Loading...")
+            Text(loadingText)
         })
             .padding()
     }

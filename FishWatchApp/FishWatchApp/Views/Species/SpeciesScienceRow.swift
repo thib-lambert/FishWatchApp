@@ -9,11 +9,16 @@ import SwiftUI
 
 struct SpeciesScienceRow: View {
 
-    @State fileprivate var isExpanded = false
-    fileprivate let image = Image(systemName: "triangle.fill")
+    @State private var isExpanded = false
+    private let image = Image(systemName: "triangle.fill")
 
     var title: String
     var content: String
+
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
+    }
 
     var body: some View {
 

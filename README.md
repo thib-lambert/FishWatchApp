@@ -1,12 +1,13 @@
-﻿
+
 # Project
 
 The goal of the project was to learn about ***SwiftUI***.
 Fish information is retrieved from an API then display in the application so as to create card on the fish.
 
 ## Instructions
-Open `.xcworkspace` file.
-You can run `pod install` or `pod update` if you need
+
+You need to run `pod install`.
+Then open `.xcworkspace` file.
 
 # Resources
 

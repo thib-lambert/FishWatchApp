@@ -9,9 +9,15 @@ import SwiftUI
 
 struct SpeciesInformationsRow: View {
 
-    var title: String!
-    var content: String!
-    var imageName: String?
+    private var title: String
+    private var content: String
+    private var imageName: String?
+
+    init(title: String, content: String, imageName: String? = nil) {
+        self.title = title
+        self.content = content
+        self.imageName = imageName
+    }
 
     var body: some View {
 

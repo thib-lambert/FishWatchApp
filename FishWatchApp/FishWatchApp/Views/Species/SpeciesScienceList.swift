@@ -9,8 +9,13 @@ import SwiftUI
 
 struct SpeciesScienceList: View {
 
-    var speciesScienceInformations: [SpeciesScienceOption]
-    var lastUpdate: String
+    private var speciesScienceInformations: [SpeciesScienceOption]
+    private var lastUpdate: String
+
+    init(speciesScienceInformations: [SpeciesScienceOption], lastUpdate: String) {
+        self.speciesScienceInformations = speciesScienceInformations
+        self.lastUpdate = lastUpdate
+    }
 
     var body: some View {
         if !speciesScienceInformations.isEmpty {

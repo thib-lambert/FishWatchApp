@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct SpeciesView: View {
-    var species: FishWatchSpecies
+    
+    private var species: FishWatchSpecies
+
+    init(species: FishWatchSpecies) {
+        self.species = species
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             SpeciesTitleView(name: species.speciesName, scientificNames: species.scientificName)
 
             SpeciesProfilView(imageSrc: species.speciesIllustrationPhoto?.src, speciesAliases: species.speciesAliases)
-
-            Divider()
 
             ScrollView {
                 VStack(alignment: .center, spacing: 20, content: {

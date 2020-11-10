@@ -9,10 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
 
+    /// Indicate if data are fetching
     @State private var isLoading = true
+
+    /// Search term for fish species
     @State private var searchValue = ""
-    @State private var speciesList = SpeciesList(speciesData: [[]])
+
+    /// List of species
+    @State private var speciesList = SpeciesList(speciesData: [])
+
+    /// Indicate if search is running
     @State private var isSearching = false
+
+    /// SpeciesManager
+    @StateObject var speciesManager = SpeciesManager.shared
 
     var body: some View {
 
@@ -40,16 +50,19 @@ struct ContentView: View {
             }
         }
             .onAppear {
-                SpeciesManager.shared.loadSpecies {
-                    isLoading.toggle()
-                    speciesList = SpeciesList(speciesData: SpeciesManager.shared.speciesOrdered())
-                }
+                // Fetching data when the view appear
+                speciesManager.loadSpecies()
             }
+            .onChange(of: speciesManager.species, perform: { value in
+                // If we are here, so the data are fetched
+                isLoading = false
+                speciesList = SpeciesList(speciesData: speciesManager.speciesOrdered())
+            })
             .onChange(of: searchValue, perform: { value in
                 isSearching = true
 
-                DispatchQueue(label: "SearchingSpecies", qos: .userInteractive).async/*After(deadline: .now() + 1)*/ {
-                    speciesList = SpeciesList(speciesData: SpeciesManager.shared.speciesSearched(searchValue: searchValue))
+                DispatchQueue(label: "SearchingSpecies", qos: .userInteractive).async {
+                    speciesList = SpeciesList(speciesData: speciesManager.speciesSearched(searchValue: searchValue))
                     isSearching = false
                 }
             })

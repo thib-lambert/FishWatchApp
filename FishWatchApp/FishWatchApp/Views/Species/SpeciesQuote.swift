@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SpeciesQuote: View {
 
-    var quote: String
+    private var quote: String
+
+    init(quote: String) {
+        self.quote = quote
+    }
 
     var body: some View {
         Text(quote)

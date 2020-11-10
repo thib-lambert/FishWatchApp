@@ -12,6 +12,11 @@ struct SearchBarView: UIViewRepresentable {
     @Binding var text: String
     var placeholder: String
 
+    init(text: Binding<String>, placeholder: String) {
+        self._text = text
+        self.placeholder = placeholder
+    }
+
     func makeCoordinator() -> SearchBarCoordinator {
         return SearchBarCoordinator(text: $text)
     }

@@ -6,12 +6,13 @@
 //
 
 import Alamofire
+import Combine
 
-class SpeciesManager {
+class SpeciesManager: NSObject, ObservableObject {
 
     static let shared = SpeciesManager()
 
-    var species: [FishWatchSpecies] = []
+    @Published var species: [FishWatchSpecies] = []
 
     fileprivate var speciesUnordered: [FishWatchSpecies] = [] {
         didSet {
@@ -22,11 +23,11 @@ class SpeciesManager {
         }
     }
 
-    fileprivate init() {
-
+    fileprivate override init() {
+        super.init()
     }
 
-    func loadSpecies(_ didFinish: (() -> Void)?) {
+    func loadSpecies() {
         AF.request("https://www.fishwatch.gov/api/species").responseDecodable(of: [FishWatchSpecies].self) { [weak self] response in
             if let strongSelf = self {
                 // Check if an error occured
@@ -34,7 +35,6 @@ class SpeciesManager {
                     strongSelf.speciesUnordered = response.value.unsafelyUnwrapped
                 }
             }
-            didFinish?()
         }
     }
 

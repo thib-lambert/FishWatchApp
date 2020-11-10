@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SpeciesList: View {
 
-    var speciesData: [[FishWatchSpecies]]
+    private var speciesData: [[FishWatchSpecies]]
+
+    init(speciesData: [[FishWatchSpecies]]) {
+        self.speciesData = speciesData
+    }
 
     var body: some View {
         // Display list only if is not empty
@@ -31,7 +35,6 @@ struct SpeciesList: View {
                                     destination: SpeciesView(species: species),
                                     label: {
                                         SpeciesRow(species: species)
-
                                     }) // End NavigationLink
                                 .clipShape(RoundedRectangle(cornerRadius: 10))
                                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))

@@ -10,9 +10,13 @@ import SDWebImageSwiftUI
 
 struct SpeciesRow: View {
 
-    @State fileprivate var isFailure = false
+    @State private var isFailure = false
 
-    var species: FishWatchSpecies
+    private var species: FishWatchSpecies
+
+    init(species: FishWatchSpecies) {
+        self.species = species
+    }
 
     var body: some View {
         HStack(alignment: .center, spacing: 5, content: {
@@ -26,7 +30,7 @@ struct SpeciesRow: View {
                     }
                     .onFailure(perform: { _ in
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-                            isFailure.toggle()
+                            isFailure = true
                         }
                     })
                     .aspectRatio(contentMode: .fit)

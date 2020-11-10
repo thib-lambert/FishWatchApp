@@ -11,10 +11,15 @@ import SDWebImageSwiftUI
 
 struct SpeciesProfilView: View {
 
-    @State fileprivate var isFailure = false
+    @State private var isFailure = false
 
-    var imageSrc: String?
-    var speciesAliases: [String]
+    private var imageSrc: String?
+    private var speciesAliases: [String]
+
+    init(imageSrc: String?, speciesAliases: [String]) {
+        self.imageSrc = imageSrc
+        self.speciesAliases = speciesAliases
+    }
 
     var body: some View {
         VStack {
@@ -57,7 +62,7 @@ struct SpeciesProfilView: View {
                     .padding([.leading, .trailing], 10)
             }
         }
-        .background(Color.white)
+            .background(Color.white)
     }
 }
 
