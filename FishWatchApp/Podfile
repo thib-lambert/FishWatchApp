@@ -11,3 +11,14 @@ target 'FishWatchApp' do
   pod 'lottie-ios'
   pod 'SDWebImageSwiftUI'
 end
+
+target 'FishWatchAppTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FishWatchApp
+	
+  pod 'Alamofire', '~> 5.2'
+  pod 'lottie-ios'
+  pod 'SDWebImageSwiftUI'
+end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		380620A476C4259F55B49C74 /* Pods_FishWatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */; };
+		530355772562A4BA0093A9AD /* FishWatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530355762562A4BA0093A9AD /* FishWatchAppTests.swift */; };
 		532085FD2546EB6B000EDF7E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532085FC2546EB6B000EDF7E /* LottieView.swift */; };
 		532086022546ED7E000EDF7E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532086012546ED7E000EDF7E /* LoadingView.swift */; };
 		5320860C2546F1BE000EDF7E /* boat.json in Resources */ = {isa = PBXBuildFile; fileRef = 5320860B2546F1BE000EDF7E /* boat.json */; };
@@ -34,11 +35,26 @@
 		53B722CA2546D73200BA191C /* FishWatchSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B722C92546D73200BA191C /* FishWatchSpecies.swift */; };
 		53B85E4325496A03001CFB8B /* SpeciesScienceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */; };
 		53B85E4625497C39001CFB8B /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4525497C39001CFB8B /* String+Utils.swift */; };
+		62EFFF1AF9AAB43F93A665DF /* Pods_FishWatchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35692737B9BBA92FBEF367F /* Pods_FishWatchAppTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		530355792562A4BA0093A9AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53389BF82546D51A00EB4D66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53389BFF2546D51A00EB4D66;
+			remoteInfo = FishWatchApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02174E596395022CE4CFAF24 /* Pods-FishWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchApp.debug.xcconfig"; path = "Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
+		45C2D3688A2EA27F933F353C /* Pods-FishWatchAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchAppTests.release.xcconfig"; path = "Target Support Files/Pods-FishWatchAppTests/Pods-FishWatchAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530355742562A4BA0093A9AD /* FishWatchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishWatchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		530355762562A4BA0093A9AD /* FishWatchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppTests.swift; sourceTree = "<group>"; };
+		530355782562A4BA0093A9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532085FC2546EB6B000EDF7E /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		532086012546ED7E000EDF7E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5320860B2546F1BE000EDF7E /* boat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boat.json; sourceTree = "<group>"; };
@@ -67,10 +83,24 @@
 		53B722C92546D73200BA191C /* FishWatchSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchSpecies.swift; sourceTree = "<group>"; };
 		53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesScienceRow.swift; sourceTree = "<group>"; };
 		53B85E4525497C39001CFB8B /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		53E3EA672562FF2F00DB347C /* FishWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppUITests.swift; sourceTree = "<group>"; };
+		53E3EA692562FF2F00DB347C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E3EA7A2562FF5200DB347C /* FishWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppUITests.swift; sourceTree = "<group>"; };
+		53E3EA7C2562FF5200DB347C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8608922A13B93D55CA3708BA /* Pods-FishWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchApp.release.xcconfig"; path = "Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp.release.xcconfig"; sourceTree = "<group>"; };
+		971605B5734A6110DF6DB765 /* Pods-FishWatchAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FishWatchAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FishWatchAppTests/Pods-FishWatchAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D35692737B9BBA92FBEF367F /* Pods_FishWatchAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FishWatchAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		530355712562A4B90093A9AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62EFFF1AF9AAB43F93A665DF /* Pods_FishWatchAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53389BFD2546D51A00EB4D66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,8 +116,18 @@
 			isa = PBXGroup;
 			children = (
 				4E16F530561F8B6691C0F536 /* Pods_FishWatchApp.framework */,
+				D35692737B9BBA92FBEF367F /* Pods_FishWatchAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		530355752562A4BA0093A9AD /* FishWatchAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				530355762562A4BA0093A9AD /* FishWatchAppTests.swift */,
+				530355782562A4BA0093A9AD /* Info.plist */,
+			);
+			path = FishWatchAppTests;
 			sourceTree = "<group>";
 		};
 		532085F82546EAB0000EDF7E /* Lottie */ = {
@@ -117,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				53389C022546D51A00EB4D66 /* FishWatchApp */,
+				530355752562A4BA0093A9AD /* FishWatchAppTests */,
+				53E3EA662562FF2F00DB347C /* FishWatchAppUITests */,
+				53E3EA792562FF5200DB347C /* FishWatchAppUITests */,
 				53389C012546D51A00EB4D66 /* Products */,
 				8B51294F4AEF204EAF967ECB /* Pods */,
 				32C09932DE4F74EDDAA5EFF4 /* Frameworks */,
@@ -127,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				53389C002546D51A00EB4D66 /* FishWatchApp.app */,
+				530355742562A4BA0093A9AD /* FishWatchAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,11 +242,31 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		53E3EA662562FF2F00DB347C /* FishWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53E3EA672562FF2F00DB347C /* FishWatchAppUITests.swift */,
+				53E3EA692562FF2F00DB347C /* Info.plist */,
+			);
+			path = FishWatchAppUITests;
+			sourceTree = "<group>";
+		};
+		53E3EA792562FF5200DB347C /* FishWatchAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53E3EA7A2562FF5200DB347C /* FishWatchAppUITests.swift */,
+				53E3EA7C2562FF5200DB347C /* Info.plist */,
+			);
+			path = FishWatchAppUITests;
+			sourceTree = "<group>";
+		};
 		8B51294F4AEF204EAF967ECB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				02174E596395022CE4CFAF24 /* Pods-FishWatchApp.debug.xcconfig */,
 				8608922A13B93D55CA3708BA /* Pods-FishWatchApp.release.xcconfig */,
+				971605B5734A6110DF6DB765 /* Pods-FishWatchAppTests.debug.xcconfig */,
+				45C2D3688A2EA27F933F353C /* Pods-FishWatchAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -210,6 +274,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		530355732562A4B90093A9AD /* FishWatchAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5303557D2562A4BA0093A9AD /* Build configuration list for PBXNativeTarget "FishWatchAppTests" */;
+			buildPhases = (
+				639F58A150A5F15271C5BBE6 /* [CP] Check Pods Manifest.lock */,
+				530355702562A4B90093A9AD /* Sources */,
+				530355712562A4B90093A9AD /* Frameworks */,
+				530355722562A4B90093A9AD /* Resources */,
+				2B681A1F68BFAF71D6AC3232 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5303557A2562A4BA0093A9AD /* PBXTargetDependency */,
+			);
+			name = FishWatchAppTests;
+			productName = FishWatchAppTests;
+			productReference = 530355742562A4BA0093A9AD /* FishWatchAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		53389BFF2546D51A00EB4D66 /* FishWatchApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53389C0F2546D51A00EB4D66 /* Build configuration list for PBXNativeTarget "FishWatchApp" */;
@@ -235,9 +319,13 @@
 		53389BF82546D51A00EB4D66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					530355732562A4B90093A9AD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 53389BFF2546D51A00EB4D66;
+					};
 					53389BFF2546D51A00EB4D66 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -257,11 +345,19 @@
 			projectRoot = "";
 			targets = (
 				53389BFF2546D51A00EB4D66 /* FishWatchApp */,
+				530355732562A4B90093A9AD /* FishWatchAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		530355722562A4B90093A9AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53389BFE2546D51A00EB4D66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +373,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B681A1F68BFAF71D6AC3232 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishWatchAppTests/Pods-FishWatchAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FishWatchAppTests/Pods-FishWatchAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FishWatchAppTests/Pods-FishWatchAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4D550BB8C15552EE8521ED82 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,9 +429,39 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FishWatchApp/Pods-FishWatchApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		639F58A150A5F15271C5BBE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FishWatchAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		530355702562A4B90093A9AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530355772562A4BA0093A9AD /* FishWatchAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53389BFC2546D51A00EB4D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,7 +492,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5303557A2562A4BA0093A9AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53389BFF2546D51A00EB4D66 /* FishWatchApp */;
+			targetProxy = 530355792562A4BA0093A9AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5303557B2562A4BA0093A9AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971605B5734A6110DF6DB765 /* Pods-FishWatchAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7ULJL4398;
+				INFOPLIST_FILE = FishWatchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lambert.thibaud.FishWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishWatchApp.app/FishWatchApp";
+			};
+			name = Debug;
+		};
+		5303557C2562A4BA0093A9AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C2D3688A2EA27F933F353C /* Pods-FishWatchAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7ULJL4398;
+				INFOPLIST_FILE = FishWatchAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lambert.thibaud.FishWatchAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishWatchApp.app/FishWatchApp";
+			};
+			name = Release;
+		};
 		53389C0D2546D51A00EB4D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,6 +710,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5303557D2562A4BA0093A9AD /* Build configuration list for PBXNativeTarget "FishWatchAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5303557B2562A4BA0093A9AD /* Debug */,
+				5303557C2562A4BA0093A9AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		53389BFB2546D51A00EB4D66 /* Build configuration list for PBXProject "FishWatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

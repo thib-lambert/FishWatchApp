@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var isSearching = false
 
     /// SpeciesManager
-    @StateObject var speciesManager = SpeciesManager.shared
+    @ObservedObject var speciesManager = SpeciesManager.shared
 
     var body: some View {
 
@@ -34,6 +34,7 @@ struct ContentView: View {
                 NavigationView {
                     VStack(alignment: .center, spacing: 0, content: {
                         SearchBarView(text: $searchValue, placeholder: "Search fish")
+                            .accessibility(identifier: "SearchFish")
 
                         if isSearching {
                             ZStack(alignment: Alignment(horizontal: .center, vertical: .center), content: {

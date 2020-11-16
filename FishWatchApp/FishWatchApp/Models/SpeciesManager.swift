@@ -39,15 +39,19 @@ class SpeciesManager: NSObject, ObservableObject {
     }
 
     func speciesSearched(searchValue: String = "") -> [[FishWatchSpecies]] {
+        var result: [[FishWatchSpecies]]
+        
         if searchValue.isEmpty {
-            return SpeciesManager.shared.speciesOrdered()
+            result = SpeciesManager.shared.speciesOrdered()
         } else {
             let tmp = SpeciesManager.shared.species.filter {
                 $0.speciesName.lowercased().contains(searchValue.lowercased())
             }
 
-            return SpeciesManager.shared.speciesOrdered(speciesToOrder: tmp)
+            result = SpeciesManager.shared.speciesOrdered(speciesToOrder: tmp)
         }
+        
+        return result
     }
 
     func speciesOrdered(speciesToOrder: [FishWatchSpecies] = SpeciesManager.shared.species) -> [[FishWatchSpecies]] {

@@ -21,7 +21,7 @@ struct SpeciesInformationsRow: View {
 
     var body: some View {
 
-        if title != "" && content != "" {
+        if !title.isEmpty && !content.isEmpty {
             HStack(alignment: .center, spacing: 10, content: {
                 if let imageName = imageName {
                     Image(imageName)
