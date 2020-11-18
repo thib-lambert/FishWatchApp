@@ -25,8 +25,8 @@ struct SpeciesScienceRow: View {
         VStack(spacing: 0) {
             HStack {
                 Text(title)
-                    .padding()
                     .foregroundColor(.white)
+                    .padding()
 
                 Spacer()
 
@@ -36,8 +36,8 @@ struct SpeciesScienceRow: View {
                         .padding()
                 } else {
                     image
-                        .rotationEffect(.init(degrees: 180))
                         .foregroundColor(.white)
+                        .rotationEffect(.init(degrees: 180))
                         .padding()
                 }
             }
@@ -49,10 +49,10 @@ struct SpeciesScienceRow: View {
             if isExpanded {
                 VStack(alignment: .center, spacing: nil, content: {
                     Text((content == "" ? "No data." : content))
-                        .multilineTextAlignment(.leading)
                         .font(.body)
-                        .padding()
+                        .multilineTextAlignment(.leading)
                         .frame(minWidth: 0, maxWidth: .infinity)
+                        .padding()
                 })
                     .background(Color.white)
             }
@@ -62,8 +62,10 @@ struct SpeciesScienceRow: View {
     }
 }
 
+#if DEBUG
 struct SpeciesScienceRow_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesScienceRow(title: "Title", content: "Content")
     }
 }
+#endif

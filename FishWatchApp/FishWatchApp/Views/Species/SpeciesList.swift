@@ -18,7 +18,6 @@ struct SpeciesList: View {
     var body: some View {
         // Display list only if is not empty
         if !speciesData.isEmpty {
-
             ScrollView {
                 VStack(alignment: .center, spacing: 10, content: {
                     ForEach(speciesData, id: \.self) { speciesOrdered in
@@ -27,8 +26,8 @@ struct SpeciesList: View {
                         VStack(alignment: .center, spacing: 5, content: {
                             Text(firstLetter)
                                 .font(.title2)
-                                .padding()
                                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                .padding()
 
                             ForEach(speciesOrdered) { species in
                                 NavigationLink(
@@ -51,8 +50,10 @@ struct SpeciesList: View {
     }
 }
 
+#if DEBUG
 struct SpeciesList_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesList(speciesData: [[FishWatchSpecies.preview, FishWatchSpecies.preview], [FishWatchSpecies.preview]])
     }
 }
+#endif

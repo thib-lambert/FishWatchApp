@@ -20,15 +20,17 @@ struct SpeciesQuote: View {
             .foregroundColor(.white)
             .font(.footnote)
             .bold()
-            .padding(20)
-            .frame(minWidth: 0, maxWidth: .infinity)
             .multilineTextAlignment(.center)
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding(20)
             .background(Color.SpeciesView.quote)
     }
 }
 
+#if DEBUG
 struct SpeciesQuote_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesQuote(quote: "Quote")
     }
 }
+#endif

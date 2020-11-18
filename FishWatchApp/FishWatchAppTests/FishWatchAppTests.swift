@@ -10,15 +10,15 @@
 import XCTest
 
 class FishWatchAppTests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testSpeciesScienceList() {
         // Empty data
         var list = SpeciesScienceList(speciesScienceInformations: [], lastUpdate: "lastUpdate")
@@ -127,7 +127,7 @@ class FishWatchAppTests: XCTestCase {
         result = SpeciesManager.shared.speciesSearched(searchValue: "Test")
         XCTAssertEqual(SpeciesManager.shared.speciesOrdered(), result)
         
-       XCTAssertEqual([], SpeciesManager.shared.speciesOrdered(speciesToOrder: []))
+        XCTAssertEqual([], SpeciesManager.shared.speciesOrdered(speciesToOrder: []))
     }
     
     func testSpeciesView() {
@@ -155,6 +155,73 @@ class FishWatchAppTests: XCTestCase {
         let fishB = FishWatchSpecies.preview
         
         XCTAssertTrue(fishA == fishB)
+        
+        XCTAssertNotNil(fishA.scienceInformations)
+        XCTAssertEqual(fishA.fisheryManagement, "fisheryManagement")
+        XCTAssertEqual(fishA.habitat, "habitat")
+        XCTAssertEqual(fishA.habitatImpacts, "habitatImpacts")
+        XCTAssertEqual(fishA.imageGallery, [FishWatchSpecies.SpeciesImages.preview])
+        XCTAssertEqual(fishA.location, "location")
+        XCTAssertEqual(fishA.management, "management")
+        XCTAssertEqual(fishA.nOAAFisheriesRegion, "nOAAFisheriesRegion")
+        XCTAssertEqual(fishA.population, "population")
+        XCTAssertEqual(fishA.populationStatus, "populationStatus")
+        XCTAssertEqual(fishA.scientificName, "scientificName")
+        XCTAssertEqual(fishA.speciesAliases, ["speciesAliasesA", "speciesAliasesB"])
+        XCTAssertEqual(fishA.speciesIllustrationPhoto, FishWatchSpecies.SpeciesImages.preview)
+        XCTAssertEqual(fishA.speciesName, "speciesName")
+        XCTAssertEqual(fishA.animalHealth, "animalHealth")
+        XCTAssertEqual(fishA.availability, "availability")
+        XCTAssertEqual(fishA.biology, "biology")
+        XCTAssertEqual(fishA.bycatch, "bycatch")
+        XCTAssertEqual(fishA.calories, "calories")
+        XCTAssertEqual(fishA.carbohydrate, "carbohydrate")
+        XCTAssertEqual(fishA.cholesterol, "cholesterol")
+        XCTAssertEqual(fishA.color, "color")
+        XCTAssertEqual(fishA.diseaseTreatmentAndPrevention, "diseaseTreatmentAndPrevention")
+        XCTAssertEqual(fishA.diseasesInSalmon, "diseasesInSalmon")
+        XCTAssertEqual(fishA.displayedSeafoodProfileIllustration, "displayedSeafoodProfileIllustration")
+        XCTAssertEqual(fishA.ecosystemServices, "ecosystemServices")
+        XCTAssertEqual(fishA.environmentalConsiderations,  "environmentalConsiderations")
+        XCTAssertEqual(fishA.environmentalEffects, "environmentalEffects")
+        XCTAssertEqual(fishA.farmingMethods, "farmingMethods")
+        XCTAssertEqual(fishA.fatTotal, "fatTotal")
+        XCTAssertEqual(fishA.feeds, "feeds")
+        XCTAssertEqual(fishA.fiberTotalDietary, "fiberTotalDietary")
+        XCTAssertEqual(fishA.fishingRate, "fishingRate")
+        XCTAssertEqual(fishA.harvest, "harvest")
+        XCTAssertEqual(fishA.harvestType, "harvestType")
+        XCTAssertEqual(fishA.healthBenefits, "healthBenefits")
+        XCTAssertEqual(fishA.humanHealth, "humanHealth")
+        XCTAssertEqual(fishA.physicalDescription, "physicalDescription")
+        XCTAssertEqual(fishA.production, "production")
+        XCTAssertEqual(fishA.protein, "protein")
+        XCTAssertEqual(fishA.quote, "quote")
+        XCTAssertEqual(fishA.quoteBackgroundColor, "quoteBackgroundColor")
+        XCTAssertEqual(fishA.research, "research")
+        XCTAssertEqual(fishA.saturatedFattyAcidsTotal, "saturatedFattyAcidsTotal")
+        XCTAssertEqual(fishA.selenium, "selenium")
+        XCTAssertEqual(fishA.servingWeight, "servingWeight")
+        XCTAssertEqual(fishA.servings, "servings")
+        XCTAssertEqual(fishA.sodium, "sodium")
+        XCTAssertEqual(fishA.source, "source")
+        XCTAssertEqual(fishA.sugarsTotal, "sugarsTotal")
+        XCTAssertEqual(fishA.taste, "taste")
+        XCTAssertEqual(fishA.texture, "texture")
+        XCTAssertEqual(fishA.path, "path")
+        XCTAssertEqual(fishA.lastUpdate, "lastUpdate")
+        
+        let bundle = Bundle(for: FishWatchAppTests.self)
+        guard let urlJson = bundle.url(forResource: "FishWatchSpecies", withExtension: ".json") else { fatalError("FishWatchSpecies.json not found!") }
+        
+        do {
+            let data = try Data(contentsOf: urlJson)
+            let fishC = try JSONDecoder().decode([FishWatchSpecies].self, from: data).first
+            XCTAssertNotNil(fishC)
+            XCTAssertEqual(fishC?.speciesName, "Red Snapper")
+        } catch {
+            fatalError("Error occured! -> \(error.localizedDescription)")
+        }
     }
     
     func testSpeciesInformationsRow() {

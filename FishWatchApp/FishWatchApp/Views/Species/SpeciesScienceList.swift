@@ -18,13 +18,10 @@ struct SpeciesScienceList: View {
     }
 
     var body: some View {
-        if !speciesScienceInformations.isEmpty {
-
             VStack(alignment: .center, spacing: 5, content: {
                 Text("The Science")
-                    .font(.title2)
                     .foregroundColor(.black)
-                    .padding(.top)
+                    .font(.title2)
 
                 ForEach(speciesScienceInformations) { option in
                     SpeciesScienceRow(title: option.title, content: option.informations)
@@ -32,21 +29,20 @@ struct SpeciesScienceList: View {
                 }
 
                 Text("Last updated: \(lastUpdate)")
-                    .font(.footnote)
-                    .padding(10)
                     .foregroundColor(.white)
+                    .font(.footnote)
+                    .padding()
                     .background(Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.25)))
-                    .padding(.bottom)
+                    .cornerRadius(25)
             })
                 .frame(minWidth: 0, maxWidth: .infinity)
+                .padding()
                 .background(Color.App.background.opacity(0.7))
                 .cornerRadius(10)
-        } else {
-            EmptyView()
-        }
     }
 }
 
+#if DEBUG
 struct SpeciesScienceList_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesScienceList(speciesScienceInformations: [
@@ -59,3 +55,4 @@ struct SpeciesScienceList_Previews: PreviewProvider {
         ], lastUpdate: "10/28/2020")
     }
 }
+#endif

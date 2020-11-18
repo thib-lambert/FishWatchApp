@@ -35,6 +35,7 @@
 		53B722CA2546D73200BA191C /* FishWatchSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B722C92546D73200BA191C /* FishWatchSpecies.swift */; };
 		53B85E4325496A03001CFB8B /* SpeciesScienceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */; };
 		53B85E4625497C39001CFB8B /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B85E4525497C39001CFB8B /* String+Utils.swift */; };
+		53D1D4252564B9FE00232E0A /* FishWatchSpecies.json in Resources */ = {isa = PBXBuildFile; fileRef = 53D1D4242564B9FE00232E0A /* FishWatchSpecies.json */; };
 		62EFFF1AF9AAB43F93A665DF /* Pods_FishWatchAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35692737B9BBA92FBEF367F /* Pods_FishWatchAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		53B722C92546D73200BA191C /* FishWatchSpecies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchSpecies.swift; sourceTree = "<group>"; };
 		53B85E4225496A03001CFB8B /* SpeciesScienceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesScienceRow.swift; sourceTree = "<group>"; };
 		53B85E4525497C39001CFB8B /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		53D1D4242564B9FE00232E0A /* FishWatchSpecies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FishWatchSpecies.json; sourceTree = "<group>"; };
 		53E3EA672562FF2F00DB347C /* FishWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppUITests.swift; sourceTree = "<group>"; };
 		53E3EA692562FF2F00DB347C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E3EA7A2562FF5200DB347C /* FishWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishWatchAppUITests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		530355752562A4BA0093A9AD /* FishWatchAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				53D1D4242564B9FE00232E0A /* FishWatchSpecies.json */,
 				530355762562A4BA0093A9AD /* FishWatchAppTests.swift */,
 				530355782562A4BA0093A9AD /* Info.plist */,
 			);
@@ -355,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D1D4252564B9FE00232E0A /* FishWatchSpecies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

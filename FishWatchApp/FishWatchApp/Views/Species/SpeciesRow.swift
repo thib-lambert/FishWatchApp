@@ -53,12 +53,13 @@ struct SpeciesRow: View {
 
             Spacer()
         })
-            .background(Color.white)
     }
 }
 
+#if DEBUG
 struct SpeciesRow_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesRow(species: FishWatchSpecies.preview)
     }
 }
+#endif

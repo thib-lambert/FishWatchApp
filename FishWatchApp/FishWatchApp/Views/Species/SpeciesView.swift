@@ -61,8 +61,10 @@ struct SpeciesView: View {
     }
 }
 
+#if DEBUG
 struct SpeciesView_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesView(species: FishWatchSpecies.preview)
     }
 }
+#endif

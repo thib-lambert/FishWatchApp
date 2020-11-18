@@ -17,13 +17,11 @@ struct LoadingView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 0, content: {
-            Group {
-                LottieView(filename: "boat")
-                    .padding()
-                    .overlay(Circle().stroke(Color.black, lineWidth: 2))
-                    .frame(width: 250, height: 250, alignment: .center)
-            }
+            LottieView(filename: "boat")
+                .frame(width: 250, height: 250, alignment: .center)
                 .padding()
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.black, lineWidth: 2))
 
             Text(loadingText)
         })
@@ -31,8 +29,10 @@ struct LoadingView: View {
     }
 }
 
+#if DEBUG
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
         LoadingView()
     }
 }
+#endif

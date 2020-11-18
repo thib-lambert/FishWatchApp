@@ -29,9 +29,9 @@ struct FishWatchSpecies: Decodable, Identifiable, Hashable {
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
 
-            src = try container.decode(String.self, forKey: .src)
-            alt = try container.decode(String.self, forKey: .alt)
-            title = try container.decode(String.self, forKey: .title)
+            src = try container.decodeIfPresent(String.self, forKey: .src) ?? ""
+            alt = try container.decodeIfPresent(String.self, forKey: .alt) ?? ""
+            title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
         }
 
         fileprivate init() {
@@ -171,13 +171,13 @@ struct FishWatchSpecies: Decodable, Identifiable, Hashable {
         habitatImpacts = try container.decodeIfPresent(String.self, forKey: .habitatImpacts) ?? ""
 
         // Sometimes it's only an dictionnary
+        // By default array is empty
+        imageGallery = []
         do {
             imageGallery = try container.decodeIfPresent([SpeciesImages].self, forKey: .imageGallery) ?? []
         } catch {
             if let tmpValue = try container.decodeIfPresent(SpeciesImages.self, forKey: .imageGallery) {
                 imageGallery = [tmpValue]
-            } else {
-                imageGallery = []
             }
         }
 

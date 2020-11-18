@@ -55,19 +55,20 @@ struct SpeciesProfilView: View {
                     .bold()
 
                 Text(speciesAliases.joined(separator: " \u{2E31} "))
+                    .font(.subheadline)
                     .italic()
                     .multilineTextAlignment(.center)
-                    .font(.subheadline)
                     .padding([.top, .bottom], 5)
                     .padding([.leading, .trailing], 10)
             }
         }
-            .background(Color.white)
     }
 }
 
+#if DEBUG
 struct SpeciesProfilView_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesProfilView(imageSrc: nil, speciesAliases: ["Alias_1", "Alias_2", "Alias_3"])
     }
 }
+#endif

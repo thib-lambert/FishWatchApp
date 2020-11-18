@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// View wich indicate the species name and scientif name
 struct SpeciesTitleView: View {
 
     private var name: String
@@ -21,8 +22,8 @@ struct SpeciesTitleView: View {
         VStack(alignment: .center, spacing: nil, content: {
             Text(name)
                 .foregroundColor(.white)
-                .bold()
                 .font(.title)
+                .bold()
 
             Text(scientificNames)
                 .foregroundColor(.white)
@@ -33,8 +34,10 @@ struct SpeciesTitleView: View {
     }
 }
 
+#if DEBUG
 struct SpeciesTitleView_Previews: PreviewProvider {
     static var previews: some View {
         SpeciesTitleView(name: "species.speciesName", scientificNames: "species.scientificName")
     }
 }
+#endif
